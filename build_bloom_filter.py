@@ -65,7 +65,5 @@ if __name__ == '__main__':
     word_num = build_obj.add_word_form_file('wordlist.txt')
     print(f'{word_num} words added!')
     res = build_obj.exist_word_from_file('wordlist.txt')
-    print(f'{sum(res)} words exist!')
-    
-    
+    print(f'{sum(res)} words exist!')  
    
