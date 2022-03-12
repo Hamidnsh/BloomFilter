@@ -7,7 +7,7 @@ Created on Thu Mar 10 18:11:45 2022
 import mmh3
 from bitarray import bitarray
 
-class Bloomfilter():
+class BloomFilter():
     
     def __init__(self, mask_size, hash_num):
         self.mask_size = mask_size
