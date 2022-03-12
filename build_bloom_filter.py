@@ -47,7 +47,7 @@ class BloomFilterWrapper():
         return int(self.filter.exist_word(word.strip().lower()))
     
     def exist_word_from_list(self, word_list):
-        return [int(self.exist_word(word)) for word in word_list]
+        return [self.exist_word(word) for word in word_list]
     
     def exist_word_from_file(self, file):
         with open(file, 'r') as fin:
